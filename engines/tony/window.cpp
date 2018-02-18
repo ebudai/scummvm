@@ -236,7 +236,7 @@ void RMWindow::getNewFrameWipe(byte *lpBuf, Common::Rect &rcBoundEllipse) {
 void RMWindow::plotSplices(const byte *lpBuf, const Common::Point &center, int x, int y) {
 	plotLines(lpBuf, center, x, y);
 	if (x != y)
-		plotLines(lpBuf, center, y, x);
+		plotLines(lpBuf, center, x, y);
 }
 
 /**
