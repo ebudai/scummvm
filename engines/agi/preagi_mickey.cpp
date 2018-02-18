@@ -582,7 +582,7 @@ void MickeyEngine::getMenuSel(char *buffer, int *sel0, int *sel1) {
 			}
 		}
 
-		if (_clickToMove || getMenuSelRow(menu, sel0, sel1, 2)) {
+		if (_clickToMove || getMenuSelRow(menu, sel0, sel1, 1)) {
 			break;
 		}
 	}
