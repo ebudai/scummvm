@@ -86,7 +86,7 @@ void Fight::eventMouse(const Common::Event &ev) {
 	getFlags()->shouldRedraw = false;
 	getFlags()->mouseRightClick = false;
 
-	if (ev.mouse.x < 608 || ev.mouse.y < 448 || ev.mouse.x >= 640 || ev.mouse.x >= 480) {
+	if (ev.mouse.x < 608 || ev.mouse.y < 448 || ev.mouse.x >= 640 || ev.mouse.y >= 480) {
 
 		// Handle right button click
 		if (ev.type == Common::EVENT_RBUTTONUP) {
