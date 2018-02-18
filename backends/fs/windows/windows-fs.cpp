@@ -225,7 +225,6 @@ AbstractFSNode *WindowsFilesystemNode::getParent() const {
 		const char *start = _path.c_str();
 		const char *end = lastPathComponent(_path, '\\');
 
-		p = new WindowsFilesystemNode();
 		p->_path = Common::String(start, end - start);
 		p->_isValid = true;
 		p->_isDirectory = true;
