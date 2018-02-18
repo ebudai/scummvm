@@ -435,7 +435,7 @@ void PartyDialog::createChar() {
 	screen.loadBackground("create.raw");
 	events.setCursor(0);
 
-	while (!_vm->shouldExit()) {
+	while (!_vm->shouldExit() && _buttonValue != Common::KEYCODE_ESCAPE) {
 		classId = -1;
 
 		if (restartFlag) {
@@ -691,7 +691,7 @@ void PartyDialog::createChar() {
 		}
 
 		printSelectionArrow(icons, selectedClass);
-	} while (!_vm->shouldExit() && _buttonValue != Common::KEYCODE_ESCAPE);
+	}
 
 	_vm->_mode = oldMode;
 }
