@@ -635,8 +635,6 @@ int LiftbotScript::sentence1(const TTsentence *sentence) {
 		newId = 210711;
 	} else if (sentence->localWord("canal")) {
 		newId = 210896;
-	} else if (sentence->localWord("bar")) {
-		newId = 210894;
 	} else if (sentence->localWord("bilgeroom")) {
 		newId = 210895;
 	} else if (sentence->localWord("titaniaroom")) {
@@ -710,9 +708,6 @@ int LiftbotScript::sentence1(const TTsentence *sentence) {
 	} else if (sentence->localWord("down") || sentence->localWord("descend")) {
 		selectResponse(210138);
 		applyResponse();
-		return 1;
-	} else if (diff >= 0) {
-		addResponse1(diff, true, newId);
 		return 1;
 	} else {
 		return 0;
