@@ -914,7 +914,7 @@ uint16 Control::saveRestorePanel(bool allowSave) {
 			quitPanel = true;
 			_mouseClicked = false;
 			_keyPressed.reset();
-		} if (allowSave && _keyPressed.keycode) {
+		} else if (allowSave && _keyPressed.keycode) {
 			handleKeyPress(_keyPressed, saveGameTexts[_selectedGame]);
 			refreshNames = true;
 			_keyPressed.reset();

@@ -1806,7 +1806,7 @@ void LoLEngine::loadTalkFile(int index) {
 int LoLEngine::characterSays(int track, int charId, bool redraw) {
 	if (charId == 1) {
 		charId = _selectedCharacter;
-	} if (charId <= 0) {
+	} else if (charId <= 0) {
 		charId = 0;
 	} else {
 		int i = 0;
@@ -2350,11 +2350,11 @@ int LoLEngine::processMagicIce(int charNum, int spellLevel) {
 
 	if (spellLevel == 0) {
 		sX = 0;
-	} if (spellLevel == 1 || spellLevel == 2) {
+	} else if (spellLevel == 1 || spellLevel == 2) {
 		mov->open("SNOW.WSA", 1, 0);
 		if (!mov->opened())
 			error("Ice: Unable to load snow.wsa");
-	} if (spellLevel == 3) {
+	} else if (spellLevel == 3) {
 		mov->open("ICE.WSA", 1, 0);
 		if (!mov->opened())
 			error("Ice: Unable to load ice.wsa");
@@ -4335,7 +4335,7 @@ bool LoLEngine::automapProcessButtons(int inputFlag) {
 	} else if (r == 1) {
 		automapBackButton();
 		printMapExitButtonText();
-	} if (r == 2) {
+	} else if (r == 2) {
 		return true;
 	}
 
