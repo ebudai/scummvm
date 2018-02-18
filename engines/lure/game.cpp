@@ -688,7 +688,7 @@ bool Game::GetTellActions() {
 		// Loop for each sub-part of commands: Action, up to two params, and
 		// a "and then" selection to allow for more commands
 
-		while ((paramIndex >= 0) && (paramIndex <= 4)) {
+		while ((paramIndex >= 0) && (paramIndex < 4)) {
 			// Update status line
 			statusLine += strlen(statusLine);
 			statusLinePos[_numTellCommands][paramIndex] = statusLine;
