@@ -805,7 +805,7 @@ T0209054_SetBehavior7_Approach:
 					}
 				} else {
 					if (AL0447_i_Behavior == kDMBehaviorWander) {
-						primaryDirectionToOrFromParty = getSmelledPartyPrimaryDirOrdinal(&creatureInfo, eventMapX, eventMapY);
+						primaryDirectionToOrFromParty = getSmelledPartyPrimaryDirOrdinal(&creatureInfo, eventMapY, eventMapX);
 						if (primaryDirectionToOrFromParty) {
 							primaryDirectionToOrFromParty--;
 							allowMovementOverFakePitsAndFakeWalls = false;
