@@ -490,7 +490,7 @@ int GameConversations::executeEntry(int index) {
 		case CMD_1:
 		case CMD_HIDE:
 		case CMD_UNHIDE:
-			for (uint idx = 0; scrEntry._entries.size(); ++idx)
+			for (uint idx = 0; idx < scrEntry._entries.size(); ++idx)
 				flagEntry(scrEntry._command, scrEntry._entries[idx]);
 			break;
 
