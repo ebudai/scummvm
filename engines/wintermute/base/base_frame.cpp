@@ -567,7 +567,7 @@ bool BaseFrame::scCallMethod(ScScript *script, ScStack *stack, ScStack *thisStac
 	//////////////////////////////////////////////////////////////////////////
 	// GetEvent
 	//////////////////////////////////////////////////////////////////////////
-	else if (strcmp(name, "GetSubframe") == 0) {
+	else if (strcmp(name, "GetEvent") == 0) {
 		stack->correctParams(1);
 		int index = stack->pop()->getInt(-1);
 		if (index < 0 || index >= (int32)_applyEvent.size()) {
