@@ -175,7 +175,7 @@ private:
 
 	VBobItem _vBob[30];
 	ListeItem _liste[6];
-	ListeItem _liste2[35];
+	ListeItem _liste2[36];
 
 	void initVBob();
 	void clearVBob();
