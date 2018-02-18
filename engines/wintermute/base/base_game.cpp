@@ -2389,7 +2389,7 @@ bool BaseGame::scSetProperty(const char *name, ScValue *value) {
 	//////////////////////////////////////////////////////////////////////////
 	// Caption
 	//////////////////////////////////////////////////////////////////////////
-	else if (strcmp(name, "Name") == 0) {
+	else if (strcmp(name, "Caption") == 0) {
 		bool res = BaseObject::scSetProperty(name, value);
 		setWindowTitle();
 		return res;
